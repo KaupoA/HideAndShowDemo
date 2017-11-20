@@ -6,4 +6,39 @@
     android:layout_height="match_parent"
     tools:context="com.kast.hideandshowdemo.MainActivity">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="showClick"
+            android:text="Show" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="hideClick"
+            android:text="Hide" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/showHideText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="77dp"
+        android:text="Click show to show and hide to hide"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
 </android.widget.RelativeLayout>
